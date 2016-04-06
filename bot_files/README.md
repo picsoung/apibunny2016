@@ -1,4 +1,5 @@
 # APIBunny 2016 - Maze generation
+![](http://apibunny.com/img/opengraph.png)
 
 This is part of the [APIBunny](http://apibunny.com) 2016 project.
 

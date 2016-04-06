@@ -1,0 +1,11 @@
+{
+  "public":{
+    "ga": {
+      "id": "UA-61459970-1"
+    }
+  },
+  "host":{
+    "dev":"https://5eaea4e5.ngrok.io",
+    "prod":"https://apibunny16.scalingo.io"
+  }
+}

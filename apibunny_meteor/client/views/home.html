@@ -1,0 +1,233 @@
+<template name="home">
+  <!-- Header -->
+  {{> header}}
+
+  {{> about}}
+  {{> services}}
+  {{> callout}}
+  {{> portfolio}}
+  {{> poweredBy}}
+  {{> builtWith}}
+  {{> footer}}
+</template>
+
+<template name="header">
+  <header id="top" class="header">
+      <div class="text-vertical-center">
+          <h1>🐰APIbunny🍫</h1>
+          <h3>The yearly Easter-themed API game</h3>
+          <br>
+          <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+      </div>
+  </header>
+</template>
+
+<template name="about">
+  <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>APIbunny is the one and only API-based game</h2>
+                    <p class="lead">Once again our cute bunny went on an adventure, to save him you will need API skills.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+</template>
+
+<template name="services">
+  <section id="services" class="services bg-primary">
+          <div class="container">
+              <div class="row text-center">
+                  <div class="col-lg-10 col-lg-offset-1">
+                      <h2>How to play</h2>
+                      <hr class="small">
+                      <div class="row">
+                          <!-- <div class="col-md-6 col-sm-12">
+                              <div class="service-item">
+                                  <span class="fa-stack fa-4x">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-code fa-stack-1x text-primary"></i>
+                              </span>
+                                  <h4>
+                                      <strong>API</strong>
+                                  </h4>
+                                  <p>Make calls to APIbunny's API and solve puzzles</p>
+                                  <a href="/apis.json" class="btn btn-light">Learn More</a>
+                              </div>
+                          </div> -->
+                          <div class="col-md-12 col-sm-12">
+                              <div class="service-item">
+                                  <span class="fa-stack fa-4x">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-slack fa-stack-1x text-primary"></i>
+                              </span>
+                                  <h4>
+                                      <strong>Slack bot</strong>
+                                  </h4>
+                                  <p>Install the APIbunny slackbot and interact with him on your favorite chat platform.</p>
+                                  <a href="#callout" class="btn btn-light">Learn More</a>
+                              </div>
+                          </div>
+                          <!-- <div class="col-md-3 col-sm-6">
+                              <div class="service-item">
+                                  <span class="fa-stack fa-4x">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                              </span>
+                                  <h4>
+                                      <strong>Service Name</strong>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  <a href="#" class="btn btn-light">Learn More</a>
+                              </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                              <div class="service-item">
+                                  <span class="fa-stack fa-4x">
+                                  <i class="fa fa-circle fa-stack-2x"></i>
+                                  <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                              </span>
+                                  <h4>
+                                      <strong>Service Name</strong>
+                                  </h4>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                  <a href="#" class="btn btn-light">Learn More</a>
+                              </div>
+                          </div> -->
+                      </div>
+                      <!-- /.row (nested) -->
+                  </div>
+                  <!-- /.col-lg-10 -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container -->
+      </section>
+</template>
+
+<template name="callout">
+  <!-- Callout -->
+    <aside class="callout" id="callout">
+        <div class="text-vertical-center">
+            <h1>Get started</h1>
+            <a href="https://slack.com/oauth/authorize?scope=bot,users:read&client_id=2186476730.28826269059&redirect_uri={{redirect_uri}}"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+        </div>
+    </aside>
+</template>
+
+<template name="portfolio">
+  <!-- Portfolio -->
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Last editions</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="uk" dir="ltr">Мабуть найбільш задротська гра,яку я бачила - APIBunny - <a href="http://t.co/8RSXg4thEx">http://t.co/8RSXg4thEx</a></p>&mdash; Olena Sovyn (@chorna_kiwka) <a href="https://twitter.com/chorna_kiwka/status/613347726080765952">June 23, 2015</a></blockquote>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">APIbunny: An API game of geeky riddles <a href="http://t.co/emGQ8Z14g4">http://t.co/emGQ8Z14g4</a> via @v4violetta on <a href="https://twitter.com/ProductHunt">@producthunt</a> <a href="http://t.co/e5xuU21Hom">pic.twitter.com/e5xuU21Hom</a></p>&mdash; Product Hunt (@ProductHunt) <a href="https://twitter.com/ProductHunt/status/584229175072030720">April 4, 2015</a></blockquote>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">I found the 2015 API Bunny&#39;s treasure! - Give it a shot too <a href="https://twitter.com/hashtag/apibunny?src=hash">#apibunny</a> <a href="https://twitter.com/3scale">@3scale</a> <a href="https://twitter.com/apitools">@apitools</a> <a href="http://t.co/zLmlWYdvrp">http://t.co/zLmlWYdvrp</a></p>&mdash; Guillaume Laforge (@glaforge) <a href="https://twitter.com/glaforge/status/584089718842912769">April 3, 2015</a></blockquote>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">I found the 2015 API Bunny&#39;s treasure! - Give it a shot too <a href="https://twitter.com/hashtag/apibunny?src=hash">#apibunny</a> <a href="https://twitter.com/3scale">@3scale</a> <a href="https://twitter.com/apitools">@apitools</a> <a href="http://t.co/st5b3DVrO3">http://t.co/st5b3DVrO3</a></p>&mdash; Karel Vervaeke (@karel1980) <a href="https://twitter.com/karel1980/status/583722224764461057">April 2, 2015</a></blockquote>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">75 players on the Bunny Maze so far an 17k calls - but no winners yet! the <a href="https://twitter.com/hashtag/apibunny?src=hash">#apibunny</a> is clearly FIENDISH this year! <a href="http://t.co/gtNHRlgdk8">http://t.co/gtNHRlgdk8</a></p>&mdash; Steven Willmott (@njyx) <a href="https://twitter.com/njyx/status/583715115985403904">April 2, 2015</a></blockquote>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I just found the <a href="https://twitter.com/hashtag/apibunny?src=hash">#apibunny</a> challange <a href="https://twitter.com/3scale">@3scale</a> <a href="https://twitter.com/apitools">@apitools</a> but solved it in a bash script fitting in a twitter message:<a href="https://t.co/qevS5z1d3u">https://t.co/qevS5z1d3u</a></p>&mdash; lalyos (@gipszlyakab) <a href="https://twitter.com/gipszlyakab/status/460026953576493056">April 26, 2014</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                    <a href="#" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+</template>
+
+<template name="poweredBy">
+  <!-- Call to Action -->
+      <aside class="call-to-action bg-primary">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h3>Powered by:</h3>
+                      <a href="http://3scale.net?ref=apibunny" class="btn btn-lg btn-light">
+                        <img src="/img/3scale_logo.png" alt="3scale logo" />
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </aside>
+</template>
+
+<template name="builtWith">
+  <section id="builWith" class="services bg-primary">
+          <div class="container">
+              <div class="row text-center">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <h3>Built With:</h3>
+                      <div class="row">
+                          <div class="col-md-6 col-sm-12 vcenter">
+                                <a href="//slack.com"><img src="/img/slack_rgb.png" style="width: 300px;"/></a>
+                          </div>
+                          <div class="col-md-6 col-sm-12 vcenter">
+                              <a href="//pandorabots.com"><img src="/img/pandorabots-api-black.png" style="width: 300px;"/></a>
+                          </div>
+                      </div>
+                      <!-- /.row (nested) -->
+                  </div>
+                  <!-- /.col-lg-10 -->
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container -->
+      </section>
+</template>
+
+<template name="footer">
+
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>APIbunny</strong>
+                    </h4>
+                    <p>built with <i class="fa fa-beer"></i> by <a href="http://twitter.com/picsoung">@picsoung</a> in Barcelona</p>
+                    <p>
+                      images from <a href="https://stocksnap.io">Stocksnap</a>
+                    </p>
+                    <hr class="small">
+                    <p class="text-muted">APIbunny 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</template>

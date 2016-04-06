@@ -1,0 +1,10 @@
+<template name="levelsIndex">
+  <h1>Levels</h1>
+  {{#each levels}}
+    {{> levelDetails}} <br/>
+  {{/each}}
+</template>
+
+<template name="levelDetails">
+  {{name}} - {{level_number}}
+</template>
