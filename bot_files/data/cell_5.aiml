@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <topic name="CELL5">
+      <category>
+          <pattern>LIST DOORS</pattern>
+          <template>:door: *Exits:* `south` and `east`.
+            
+          </template>
+      </category>
+
+      <category>
+          <pattern>GO <set>directions</set></pattern>
+          <template>
+           <think><set name="user_direction"><star /></set></think>
+            <condition name="user_direction">
+              
+                <li value="south">
+                    Moving south
+                    <think><set name="topic">CELL3</set></think>
+                    <srai>MOVETO 3</srai>
+                </li>
+                
+              
+                <li value="east">
+                    Moving east
+                    <think><set name="topic">CELL6</set></think>
+                    <srai>MOVETO 6</srai>
+                </li>
+                
+              
+              <li>There is no door in this direction</li>
+            </condition>
+          </template>
+      </category>
+
+      
+
+      
+        
+          <category>
+            <pattern>*</pattern>
+            <template>
+              <think><set name="puzzle_solution"><star /></set></think>
+              <condition name="puzzle_solution">
+                <li value="Idempotent">
+                  <srai>GOODANSWER</srai>
+                  <srai>GIVECLUE M</srai>
+                </li>
+                <li>
+                  <srai>WRONGANSWER</srai>
+                </li>
+              </condition>
+            </template>
+          </category>
+        
+      
+  </topic>
+</aiml>

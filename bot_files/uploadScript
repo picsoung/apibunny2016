@@ -1,0 +1,12 @@
+#!/bin/bash
+for i in $( seq 35 ); do
+    echo Upload cell_$i.aiml
+    pb upload ./data/cell_$i.aiml;
+    sleep 1;
+done
+echo Upload cells.aiml
+pb upload ./data/cells.aiml;
+echo Upload welcome.aiml
+pb upload ./welcome.aiml;
+echo Compiling...
+pb compile

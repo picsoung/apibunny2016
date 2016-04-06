@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>HI</pattern>
+    <template>
+      <srai>WELCOMETALK</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HEY</pattern>
+    <template>
+      <srai>WELCOMETALK</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      <srai>WELCOMETALK</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>YO</pattern>
+    <template>
+      <srai>WELCOMETALK</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>ALRIGHT</pattern>
+    <template>
+      <srai>WELCOMETALK</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>OLA</pattern>
+    <template>
+      <srai>WELCOMETALK</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>BONJOUR</pattern>
+    <template>
+      <srai>WELCOMETALK</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>START</pattern>
+    <template>
+      <srai>MOVETO 1</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>RESET</pattern>
+    <template>
+      Let's start over!
+      <think><set name="topic"></set></think>
+      <think><set name="welcome">unknown</set></think>
+      <think><set name="user_direction"></set></think>
+      <srai>START</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>RESTART</pattern>
+    <template>
+      <srai>RESET</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>START OVER</pattern>
+    <template>
+      <srai>RESET</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WELCOMETALK</pattern>
+    <template>
+        <think><set name="welcome">true</set></think>
+        Welcome to :rabbit: *APIbunny* game. <br/>
+        It's an adventure game around the theme of Easter. Explore around, solve puzzles to get clues and find the exit password. <br />
+        If you get lost tweet at &lt;https://twitter.com/picsoung | @picsoung&gt; or  &lt;https://twitter.com/3scale | @3scale&gt; and we will help you out <br />
+        Follow the conversation on &lt;https://twitter.com/hashtag/apibunny | Twitter&gt; <br />
+        :old_key: indicates that there is a puzzle to solve in this room, just type your answer, and the APIbunny will let you know if it's right or not <br />
+        :runner: type `go [direction]` to move around<br />
+        To get started say `start` <br />
+        Enjoy!
+        :rabbit: :chocolate_bar: :rabbit: :chocolate_bar: :rabbit: :chocolate_bar: :rabbit: :chocolate_bar: :rabbit: :chocolate_bar: :rabbit: :chocolate_bar: :rabbit: :chocolate_bar:
+    </template>
+  </category>
+</aiml>

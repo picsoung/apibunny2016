@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <topic name="CELL17">
+      <category>
+          <pattern>LIST DOORS</pattern>
+          <template>:door: *Exits:* `west` and `south`.
+            
+              And an exit door too.
+            
+          </template>
+      </category>
+
+      <category>
+          <pattern>GO <set>directions</set></pattern>
+          <template>
+           <think><set name="user_direction"><star /></set></think>
+            <condition name="user_direction">
+              
+                <li value="west">
+                    Moving west
+                    <think><set name="topic">CELL16</set></think>
+                    <srai>MOVETO 16</srai>
+                </li>
+                
+                <li value="exit">
+                    <srai>CHECKEXIT</srai>
+                </li>
+                
+              
+                <li value="south">
+                    Moving south
+                    <think><set name="topic">CELL23</set></think>
+                    <srai>MOVETO 23</srai>
+                </li>
+                
+                <li value="exit">
+                    <srai>CHECKEXIT</srai>
+                </li>
+                
+              
+              <li>There is no door in this direction</li>
+            </condition>
+          </template>
+      </category>
+
+      
+       <category>
+         <pattern>*</pattern>
+         <template>
+            <think><set name="exit_password"><star /></set></think>
+            <srai>CHECKEXIT</srai>
+         </template>
+      </category>
+
+      <category>
+        <pattern>STUPIDPASSWORD</pattern>
+        <template>
+           <random>
+             <li>Grandma? is that you?</li>
+             <li>This can't be real!</li>
+             <li>We are PCI, and ISO 404 compliant. Your security matters.</li>
+             <li>I guess I have to tweet about this, and let the world know.</li>
+           </random>
+        </template>
+     </category>
+
+
+       <category>
+           <pattern>CHECKEXIT</pattern>
+           <template>
+               <condition name="exit_password">
+                 <li value="MIA WALLACE">
+                   Success you finished!
+                   You are out, the bunny is safe.
+                   &lt;https://twitter.com/intent/tweet?text=I%20mastered%20%23APIbunny%202016%2C%20try%20it%20too%20http%3A%2F%2Fapibunny.com%20%403scale | Tweet your victory&gt;
+                 </li>
+                 <li value="password">
+                   <srai>STUPIDPASSWORD</srai>
+                 </li>
+                 <li value="123456">
+                   <srai>STUPIDPASSWORD</srai>
+                 </li>
+                 <li value="qwertyuiop">
+                   <srai>STUPIDPASSWORD</srai>
+                 </li>
+                 <li value="god">
+                   <srai>STUPIDPASSWORD</srai>
+                 </li>
+                 <li value="unknown">
+                     You need to set a password before trying to exit
+                 </li>
+                 <li>You did not find the password to exit, try again ;)</li>
+               </condition>
+           </template>
+       </category>
+      
+
+      
+        
+      
+  </topic>
+</aiml>

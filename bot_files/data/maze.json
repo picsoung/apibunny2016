@@ -1,0 +1,410 @@
+{
+  "title": "APIBunny 2016",
+  "cells":[
+    {
+      "name":"The Entrance Hall",
+      "id": 1,
+      "description": "Welcome to the game, you are in a bright entrance hall. No sign of bunnies.",
+      "exits":[
+        {
+          "cardinal":"east",
+          "cell_number":2
+        }
+      ]
+    },
+    {
+      "name":"The Hallway",
+      "id": 2,
+      "description": "You are in a square hallway with a checkered floor pattern and a large statue of Winston Churchill.",
+      "exits":[
+        {"cardinal":"north",
+          "cell_number":3},
+        {"cardinal":"west",
+          "cell_number":1},
+        {
+            "cardinal":"east",
+            "cell_number":11
+        }
+      ]
+    },
+    {
+      "name":"North Wing",
+      "id": 3,
+      "description": "You entered the north wing area and are standing in a wide room filled with comfy sofas.",
+      "exits":[
+        {
+          "cardinal":"north",
+          "cell_number":5
+        },
+        {
+          "cardinal":"south",
+          "cell_number":2
+        },
+        {
+          "cardinal":"west",
+          "cell_number":4
+        }
+      ]
+    },
+    {
+      "name":"The Dinner",
+      "id": 4,
+      "description": "You are in a large open space with fake leather booths and tables, as well as metal serving counter top. There is a faint smell of Huevos Rancheros.",
+      "exits":[{
+        "cardinal":"east",
+        "cell_number":3}
+      ]
+    },
+    {
+      "name":"Music Room",
+      "id": 5,
+      "description": "The room you are in is lined with large racks of 45\" LPs from the 60’s and 70s. ",
+      "puzzle":"This thing has no varying side-effects.",
+      "solution":"Idempotent",
+      "clue":"M",
+      "exits":[
+        {"cardinal":"south",
+        "cell_number":3},
+        {"cardinal":"east",
+        "cell_number":6}
+      ]
+    },
+    {
+      "name":"The Library",
+      "id": 6,
+      "description": "This long room has a high ceiling and walkways all around the edge. Books line all the shelves and a small movable ladder allows you to move up and down to get books you’d like to read. ",
+      "exits":[
+        {"cardinal":"east",
+        "cell_number":7},
+        {"cardinal":"west",
+        "cell_number":5},
+        {"cardinal":"south",
+        "cell_number":8}
+      ]
+    },
+    {
+      "name":"The Movie Room",
+      "id": 7,
+      "description": "You stumble into a dimly lit space with a large curved screen and a row of projectors at the back. 20 plush seats are grouped in the center of the room. ",
+      "puzzle":"How did you walk before you Swaggered?",
+      "clue":"W",
+      "solution":"WADL",
+      "exits":[
+        {"cardinal":"west",
+        "cell_number":6}
+      ]
+    },
+    {
+      "name":"Rabbit gallery",
+      "id": 8,
+      "description": "This is a round room with ornate paintings of giant rabbits lining the walls. Gentle sunlight plays in from up above to illuminate the space. Still no real rabbits…. ",
+      "exits":[
+        {"cardinal":"east",
+        "cell_number":9},
+          {
+            "cardinal":"north",
+            "cell_number":6
+          }
+        ]
+    },
+    {
+      "name":"Statue room",
+      "id": 9,
+      "description": "This large room is much longer than it is wide and houses an impressive collection of rabbit statues - each in a different pose. ",
+      "exits":[
+        {"cardinal":"west",
+        "cell_number":8},
+        {"cardinal":"south-west",
+        "cell_number":11},
+        {"cardinal":"south-east",
+        "cell_number":12},
+        {"cardinal":"east",
+        "cell_number":10}
+      ]
+    },
+    {
+      "name":"Aquarium Room",
+      "id": 10,
+      "description": "This room makes you feel like you are in a giant fishtank. Walking under the glass ceiling and between the columns you can see 100’s of fish flitting about on the other side.",
+      "puzzle":"Body creating the new description format on the block!",
+      "solution":"OpenAPI Initiative",
+      "clue":"I",
+      "exits":[
+        {"cardinal":"east",
+        "cell_number":18},
+        {"cardinal":"west",
+        "cell_number":9}
+      ]
+    },
+    {
+      "name":"Great Hall",
+      "id": 11,
+      "description": "You are in a long hall with a huge dinning table surrounded by formal chairs.",
+      "puzzle":"Known to be the Cadmus of APIs.",
+      "solution":"John Musser",
+      "clue":"E",
+      "exits":[
+        {"cardinal":"west",
+        "cell_number":2},
+        {"cardinal":"south-west",
+        "cell_number":15},
+        {"cardinal":"north-west",
+        "cell_number":9}
+      ]
+    },
+    {
+      "name":"Art Room",
+      "id": 12,
+      "description": "This room is dominated by a single painting which looks to be the original Mona Lisa. Nice find, but where are the rabbits?",
+      "exits":[
+          {"cardinal":"north",
+            "cell_number":9
+          },{"cardinal":"south",
+          "cell_number":16}
+      ]
+    },
+    {
+      "name":"Surveillance Room",
+      "id": 13,
+      "description": "This room features a bank of monitors, all showing random static. On closer inspection, the cables have all been chewed through by rabbit teeth.",
+      "exits":[
+        {"cardinal":"east",
+        "cell_number":14},
+        {"cardinal":"south",
+        "cell_number":34}
+      ]
+    },
+    {
+      "name":"Phone Room",
+      "id": 14,
+      "description": "This room contains 20 phone booths, all with different labels but no way to dial a number. ",
+      "puzzle":"The source of REST.",
+      "solution":"Roy Fielding",
+      "clue":"L",
+      "exits":[
+        {"cardinal":"west",
+        "cell_number":13},
+        {"cardinal":"east",
+        "cell_number":15}
+      ]
+    },
+    {
+      "name":"Ante Room",
+      "id": 15,
+      "description": "This room contains all the materials needed to serve dinner in the Great Hall.",
+      "exits":[
+        {"cardinal":"west",
+        "cell_number":14},
+        {"cardinal":"south",
+        "cell_number":28},
+        {"cardinal":"north-east",
+        "cell_number":11}
+      ]
+    },
+    {
+      "name":"Arnold's Room",
+      "id": 16,
+      "description": "The room is covered in pictures of a pig dressed in various different costumes. ",
+      "exits":[
+        {"cardinal":"north","cell_number": 12},
+        {"cardinal":"south","cell_number":35},
+        {"cardinal":"east","cell_number":17}
+    ]},
+    {
+      "name":"Dancefloor",
+      "id": 17,
+      "description": "This star shaped room is long and wide with a large square raised dance floor in the center.\nThere is also a GLOWING DOOR in the center of the room and as you approach, a soft voice asks you - \"What’s the password?\".",
+      "type":"exit",
+      "puzzle":"What’s the password?",
+      "password":"MIA WALLACE",
+      "solution":"MIA WALLACE",
+      "exits":[
+        {"cardinal":"west","cell_number":16},
+        {"cardinal":"south","cell_number":23}
+      ]
+    },
+    {
+      "name":"Ping Pong Room",
+      "id": 18,
+      "description": "This room contains a single well worn Ping Pong table. The paint on the walls is scuffed and marked from one too many enthusiastic impacts. ",
+      "exits":[
+        {"cardinal":"west","cell_number":10},
+        {"cardinal":"south","cell_number":19}
+      ]
+    },
+    {
+      "name":"Table football room",
+      "id": 19,
+      "description": "Someone has stolen the table football table. ",
+      "exits":[
+        {"cardinal":"north","cell_number": 18},
+        {"cardinal":"south","cell_number":20}
+    ]},
+    {
+      "name":"Darts Room",
+      "id": 20,
+      "description": "The electronic darts machine in this room is flashing its lights for the next player. But the rabbit hunt spurs you on!",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number": 19},{"cardinal":"south","cell_number":21}
+    ]},
+    {
+      "name":"Shuffleboard Room",
+      "id": 21,
+      "description": "The wooden shuffleboard is in good order in the middle of the room.",
+      "puzzle":"Don't hate the hype",
+      "solution":"HAteos",
+      "clue":"A",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number": 20},
+        {"cardinal":"south-west","cell_number":22}
+    ]},
+    {
+      "name":"Pool Room",
+      "id": 22,
+      "description": "You’re in a large courtyard filled with sun loungers and a 25m swimming pool. The Jacuzzi looks inviting, but the rabbit quest is more important.",
+      "exits":[
+        {"cardinal":"north-west","cell_number":23},
+        {"cardinal":"north-east","cell_number":21},
+        {"cardinal":"west","cell_number":25}
+      ]
+    },
+    {
+      "name":"Locker Room",
+      "id": 23,
+      "description": "This room contains showers, benches, lockers and ways to change your clothes before swimming.",
+      "exits":[
+        {"cardinal":"south","cell_number":22},
+        {"cardinal":"north","cell_number":17}
+    ]},
+    {
+      "name":"Slims",
+      "id": 24,
+      "description": "This room contains a large number of disco glitter balls, a dance floor and impressive speakers",
+      "puzzle":"AJAX best friend to travel between distant locations",
+      "solution":"CORS",
+      "clue":"C",
+      "exits":[
+        {"cardinal":"west","cell_number":26}
+      ]
+    },
+    {
+      "name":"Coffee station",
+      "id": 25,
+      "description": "This room features a complex professional expresso machine so intimidating you feel an urge to move on.",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number":35},
+        {"cardinal":"south","cell_number":26},
+        {"cardinal":"east","cell_number":22}
+    ]},
+    {
+      "name":"Patio",
+      "id": 26,
+      "description": "This room opens to a small garden with pleasant sunlight and a number of tables to enjoy coffee at. ",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number":25},
+        {"cardinal":"south","cell_number":27},
+        {"cardinal":"east","cell_number":24}
+    ]},
+    {
+      "name":"Bathroom",
+      "id": 27,
+      "description": "You’re in the bathroom. Yep - No rabbits here… ",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number":26
+      }
+    ]},
+    {
+      "name":"Closet",
+      "id": 28,
+      "description": "This room is full of coats, boots and other exterior clothing. There’s possibly an umbrella somewhere in here.",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number":15},
+        {"cardinal":"south","cell_number":29},
+        {"cardinal":"east","cell_number":35}
+    ]},
+    {
+      "name":"Surf Room",
+      "id": 29,
+      "description": "This room is stacked wall to wall with surf boards and Dr. Zog’s Wax.",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number":28},
+        {"cardinal":"west","cell_number":32}
+    ]},
+    {
+      "name":"Clue room",
+      "id": 30,
+      "description": "This room is not exciting except for the fact that: you can get a clue",
+      "puzzle":"Freddy's digital horror friend",
+      "solution":"JSON",
+      "clue":"A",
+      "exits":[
+        {
+  "cardinal":"north",
+  "cell_number":32},
+{"cardinal":"west","cell_number":31}
+    ]},
+    {
+      "name":"Solitaire Room",
+      "id": 31,
+      "description": "Lots of decks of cards lie scattered on tables, each with one chair standing nearby.",
+      "exits":[
+        {"cardinal":"east","cell_number":30}
+      ]
+    },
+    {
+      "name":"Flower Room",
+      "id": 32,
+      "description": "This room has flower arrangements all around the walls.",
+      "exits":[
+        {"cardinal":"east","cell_number":29},
+        {"cardinal":"south","cell_number":30},
+        {"cardinal":"west","cell_number":33}
+      ]
+    },
+    {
+      "name":"Dull Room",
+      "id": 33,
+      "description": "Nope, nothing here. ",
+      "exits":[
+        {"cardinal":"east","cell_number":32},
+        {"cardinal":"north","cell_number":34}
+    ]},
+    {
+      "name":"Observation Bubble",
+      "id": 34,
+      "description": "This room contains a spiral staircase upwards into a clear observation bubble from which you can see far over the surrounding countryside. ",
+      "puzzle":"The collective conscience of the API world.",
+      "solution":"Kin Lane",
+      "clue":"L",
+      "exits":[
+        {"cardinal":"north","cell_number":13},
+        {"cardinal":"south","cell_number":33}
+    ]},
+    {
+      "name":"Spiral Room",
+      "id": 35,
+      "description": "This room has a domed ceiling painted in swirling bright colors. Rabbit motifs are plastered on the walls.",
+      "puzzle":"Want to feel secure? Implement it.",
+      "solution":"Authentication",
+      "clue":"A",
+      "exits":[
+        {"cardinal":"north","cell_number":16},
+        {"cardinal":"south","cell_number":25},
+      {"cardinal":"west","cell_number":28}
+    ]}
+  ]
+}

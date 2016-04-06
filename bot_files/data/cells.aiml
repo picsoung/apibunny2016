@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>MOVETO *</pattern>
+    <template>
+        <think><set name="cell"><star /></set></think>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>CELLINTRO</pattern>
+    <template>
+      <condition name="cell">
+        
+          <li value="1">
+              :scroll: *The Entrance Hall* - Welcome to the game, you are in a bright entrance hall. No sign of bunnies.
+              
+
+              <think><set name="cell_room">The Entrance Hall</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="2">
+              :scroll: *The Hallway* - You are in a square hallway with a checkered floor pattern and a large statue of Winston Churchill.
+              
+
+              <think><set name="cell_room">The Hallway</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="3">
+              :scroll: *North Wing* - You entered the north wing area and are standing in a wide room filled with comfy sofas.
+              
+
+              <think><set name="cell_room">North Wing</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="4">
+              :scroll: *The Dinner* - You are in a large open space with fake leather booths and tables, as well as metal serving counter top. There is a faint smell of Huevos Rancheros.
+              
+
+              <think><set name="cell_room">The Dinner</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="5">
+              :scroll: *Music Room* - The room you are in is lined with large racks of 45&quot; LPs from the 60’s and 70s. 
+              
+                
+                  :old_key: *Puzzle*: This thing has no varying side-effects.
+                
+              
+
+              <think><set name="cell_room">Music Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="6">
+              :scroll: *The Library* - This long room has a high ceiling and walkways all around the edge. Books line all the shelves and a small movable ladder allows you to move up and down to get books you’d like to read. 
+              
+
+              <think><set name="cell_room">The Library</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="7">
+              :scroll: *The Movie Room* - You stumble into a dimly lit space with a large curved screen and a row of projectors at the back. 20 plush seats are grouped in the center of the room. 
+              
+                
+                  :old_key: *Puzzle*: How did you walk before you Swaggered?
+                
+              
+
+              <think><set name="cell_room">The Movie Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="8">
+              :scroll: *Rabbit gallery* - This is a round room with ornate paintings of giant rabbits lining the walls. Gentle sunlight plays in from up above to illuminate the space. Still no real rabbits…. 
+              
+
+              <think><set name="cell_room">Rabbit gallery</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="9">
+              :scroll: *Statue room* - This large room is much longer than it is wide and houses an impressive collection of rabbit statues - each in a different pose. 
+              
+
+              <think><set name="cell_room">Statue room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="10">
+              :scroll: *Aquarium Room* - This room makes you feel like you are in a giant fishtank. Walking under the glass ceiling and between the columns you can see 100’s of fish flitting about on the other side.
+              
+                
+                  :old_key: *Puzzle*: Body creating the new description format on the block!
+                
+              
+
+              <think><set name="cell_room">Aquarium Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="11">
+              :scroll: *Great Hall* - You are in a long hall with a huge dinning table surrounded by formal chairs.
+              
+                
+                  :old_key: *Puzzle*: Known to be the Cadmus of APIs.
+                
+              
+
+              <think><set name="cell_room">Great Hall</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="12">
+              :scroll: *Art Room* - This room is dominated by a single painting which looks to be the original Mona Lisa. Nice find, but where are the rabbits?
+              
+
+              <think><set name="cell_room">Art Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="13">
+              :scroll: *Surveillance Room* - This room features a bank of monitors, all showing random static. On closer inspection, the cables have all been chewed through by rabbit teeth.
+              
+
+              <think><set name="cell_room">Surveillance Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="14">
+              :scroll: *Phone Room* - This room contains 20 phone booths, all with different labels but no way to dial a number. 
+              
+                
+                  :old_key: *Puzzle*: The source of REST.
+                
+              
+
+              <think><set name="cell_room">Phone Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="15">
+              :scroll: *Ante Room* - This room contains all the materials needed to serve dinner in the Great Hall.
+              
+
+              <think><set name="cell_room">Ante Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="16">
+              :scroll: *Arnold&#39;s Room* - The room is covered in pictures of a pig dressed in various different costumes. 
+              
+
+              <think><set name="cell_room">Arnold&#39;s Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="17">
+              :scroll: *Dancefloor* - This star shaped room is long and wide with a large square raised dance floor in the center.
+There is also a GLOWING DOOR in the center of the room and as you approach, a soft voice asks you - &quot;What’s the password?&quot;.
+              
+                
+                  :old_key: What’s the password?
+                
+              
+
+              <think><set name="cell_room">Dancefloor</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="18">
+              :scroll: *Ping Pong Room* - This room contains a single well worn Ping Pong table. The paint on the walls is scuffed and marked from one too many enthusiastic impacts. 
+              
+
+              <think><set name="cell_room">Ping Pong Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="19">
+              :scroll: *Table football room* - Someone has stolen the table football table. 
+              
+
+              <think><set name="cell_room">Table football room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="20">
+              :scroll: *Darts Room* - The electronic darts machine in this room is flashing its lights for the next player. But the rabbit hunt spurs you on!
+              
+
+              <think><set name="cell_room">Darts Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="21">
+              :scroll: *Shuffleboard Room* - The wooden shuffleboard is in good order in the middle of the room.
+              
+                
+                  :old_key: *Puzzle*: Don&#39;t hate the hype
+                
+              
+
+              <think><set name="cell_room">Shuffleboard Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="22">
+              :scroll: *Pool Room* - You’re in a large courtyard filled with sun loungers and a 25m swimming pool. The Jacuzzi looks inviting, but the rabbit quest is more important.
+              
+
+              <think><set name="cell_room">Pool Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="23">
+              :scroll: *Locker Room* - This room contains showers, benches, lockers and ways to change your clothes before swimming.
+              
+
+              <think><set name="cell_room">Locker Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="24">
+              :scroll: *Slims* - This room contains a large number of disco glitter balls, a dance floor and impressive speakers
+              
+                
+                  :old_key: *Puzzle*: AJAX best friend to travel between distant locations
+                
+              
+
+              <think><set name="cell_room">Slims</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="25">
+              :scroll: *Coffee station* - This room features a complex professional expresso machine so intimidating you feel an urge to move on.
+              
+
+              <think><set name="cell_room">Coffee station</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="26">
+              :scroll: *Patio* - This room opens to a small garden with pleasant sunlight and a number of tables to enjoy coffee at. 
+              
+
+              <think><set name="cell_room">Patio</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="27">
+              :scroll: *Bathroom* - You’re in the bathroom. Yep - No rabbits here… 
+              
+
+              <think><set name="cell_room">Bathroom</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="28">
+              :scroll: *Closet* - This room is full of coats, boots and other exterior clothing. There’s possibly an umbrella somewhere in here.
+              
+
+              <think><set name="cell_room">Closet</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="29">
+              :scroll: *Surf Room* - This room is stacked wall to wall with surf boards and Dr. Zog’s Wax.
+              
+
+              <think><set name="cell_room">Surf Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="30">
+              :scroll: *Clue room* - This room is not exciting except for the fact that: you can get a clue
+              
+                
+                  :old_key: *Puzzle*: Freddy&#39;s digital horror friend
+                
+              
+
+              <think><set name="cell_room">Clue room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="31">
+              :scroll: *Solitaire Room* - Lots of decks of cards lie scattered on tables, each with one chair standing nearby.
+              
+
+              <think><set name="cell_room">Solitaire Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="32">
+              :scroll: *Flower Room* - This room has flower arrangements all around the walls.
+              
+
+              <think><set name="cell_room">Flower Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="33">
+              :scroll: *Dull Room* - Nope, nothing here. 
+              
+
+              <think><set name="cell_room">Dull Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="34">
+              :scroll: *Observation Bubble* - This room contains a spiral staircase upwards into a clear observation bubble from which you can see far over the surrounding countryside. 
+              
+                
+                  :old_key: *Puzzle*: The collective conscience of the API world.
+                
+              
+
+              <think><set name="cell_room">Observation Bubble</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+          <li value="35">
+              :scroll: *Spiral Room* - This room has a domed ceiling painted in swirling bright colors. Rabbit motifs are plastered on the walls.
+              
+                
+                  :old_key: *Puzzle*: Want to feel secure? Implement it.
+                
+              
+
+              <think><set name="cell_room">Spiral Room</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        
+        <li>Something went wrong</li>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>GOODANSWER</pattern>
+    <template>
+      <random>
+        <li>Absolutely right!</li>
+        <li>I knew you looked smart.</li>
+        <li>This game seems too easy for you.</li>
+        <li>You coded that game, did not you?</li>
+        <li>Smartypants!</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WRONGANSWER</pattern>
+    <template>
+      <random>
+        <li>Ahah you wish :joy:</li>
+        <li>:-1: :-1: :-1: :-1:</li>
+        <li>Nein.</li>
+        <li>Remind me not to call you when I need a right answer!</li>
+        <li>This is not good.</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>SHOW</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>VIEW</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>LOOK AROUND</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DESCRIPTION</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>REPEAT</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+    <category>
+      <pattern>WHERE AM I</pattern>
+      <template>
+          Your are in *<get name="cell_room" />*
+      </template>
+    </category>
+
+    <category>
+      <pattern>GIVECLUE *</pattern>
+      <template>
+        You have collected a new clue: *<star />*
+      </template>
+    </category>
+
+    <category>
+        <pattern>DESCRIBE ROOM</pattern>
+        <template><srai>LIST DOORS</srai></template>
+    </category>
+
+    <category>
+        <pattern>GO *</pattern>
+        <template>This is not a valid direction</template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>This is not a valid command, sorry<br />
+      Try `hi` or `bonjour` to get started.</template>
+    </category>
+</aiml>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <topic name="CELL6">
+      <category>
+          <pattern>LIST DOORS</pattern>
+          <template>
+              :door: *Exits:* `east` and `west` and `south`.
+          </template>
+      </category>
+
+      <category>
+          <pattern>GO <set>directions</set></pattern>
+          <template>
+           <think><set name="user_direction"><star /></set></think>
+            <condition name="user_direction">
+                <li value="east">
+                    Moving east
+                    <think><set name="topic">CELL7</set></think>
+                    <srai>MOVETO 7</srai>
+                </li>
+                <li value="west">
+                    Moving west
+                    <think><set name="topic">CELL5</set></think>
+                    <srai>MOVETO 5</srai>
+                </li>
+                <li value="south">
+                    Moving south
+                    <think><set name="topic">CELL8</set></think>
+                    <srai>MOVETO 8</srai>
+                </li>
+              <li>There is no door in this direction</li>
+            </condition>
+          </template>
+      </category>
+  </topic>
+</aiml>

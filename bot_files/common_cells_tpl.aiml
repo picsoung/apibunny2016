@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>MOVETO *</pattern>
+    <template>
+        <think><set name="cell"><star /></set></think>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>CELLINTRO</pattern>
+    <template>
+      <condition name="cell">
+        {% for cell in cells %}
+          <li value="{{cell.id}}">
+              :scroll: *{{cell.name}}* - {{cell.description}}
+              {% if cell.puzzle %}
+                {% if cell.type == 'exit' %}
+                  :old_key: {{cell.puzzle}}
+                {% else %}
+                  :old_key: *Puzzle*: {{cell.puzzle}}
+                {% endif %}
+              {% endif %}
+
+              <think><set name="cell_room">{{cell.name}}</set></think>
+              <think><set name="topic">CELL<get name="cell" /></set></think>
+              <srai>LIST DOORS</srai>
+          </li>
+        {% endfor %}
+        <li>Something went wrong</li>
+      </condition>
+    </template>
+  </category>
+
+  <category>
+    <pattern>GOODANSWER</pattern>
+    <template>
+      <random>
+        <li>Absolutely right!</li>
+        <li>I knew you looked smart.</li>
+        <li>This game seems too easy for you.</li>
+        <li>You coded that game, did not you?</li>
+        <li>Smartypants!</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WRONGANSWER</pattern>
+    <template>
+      <random>
+        <li>Ahah you wish :joy:</li>
+        <li>:-1: :-1: :-1: :-1:</li>
+        <li>Nein.</li>
+        <li>Remind me not to call you when I need a right answer!</li>
+        <li>This is not good.</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>SHOW</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>VIEW</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>LOOK AROUND</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DESCRIPTION</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>REPEAT</pattern>
+    <template>
+        <srai>CELLINTRO</srai>
+    </template>
+  </category>
+
+    <category>
+      <pattern>WHERE AM I</pattern>
+      <template>
+          Your are in *<get name="cell_room" />*
+      </template>
+    </category>
+
+    <category>
+      <pattern>GIVECLUE *</pattern>
+      <template>
+        You have collected a new clue: *<star />*
+      </template>
+    </category>
+
+    <category>
+        <pattern>DESCRIBE ROOM</pattern>
+        <template><srai>LIST DOORS</srai></template>
+    </category>
+
+    <category>
+        <pattern>GO *</pattern>
+        <template>This is not a valid direction</template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>This is not a valid command, sorry<br />
+      Try `hi` or `bonjour` to get started.</template>
+    </category>
+</aiml>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- insert your AIML categories here -->
+  <topic name="CELL3">
+      <category>
+          <pattern>LIST DOORS</pattern>
+          <template>:door: *Exits:* `north` and `south` and `west`.
+            
+          </template>
+      </category>
+
+      <category>
+          <pattern>GO <set>directions</set></pattern>
+          <template>
+           <think><set name="user_direction"><star /></set></think>
+            <condition name="user_direction">
+              
+                <li value="north">
+                    Moving north
+                    <think><set name="topic">CELL5</set></think>
+                    <srai>MOVETO 5</srai>
+                </li>
+                
+              
+                <li value="south">
+                    Moving south
+                    <think><set name="topic">CELL2</set></think>
+                    <srai>MOVETO 2</srai>
+                </li>
+                
+              
+                <li value="west">
+                    Moving west
+                    <think><set name="topic">CELL4</set></think>
+                    <srai>MOVETO 4</srai>
+                </li>
+                
+              
+              <li>There is no door in this direction</li>
+            </condition>
+          </template>
+      </category>
+
+      
+
+      
+  </topic>
+</aiml>
